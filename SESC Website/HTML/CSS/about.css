@@ -1,0 +1,323 @@
+:root {
+  --sesc-dark-green: #4A9A3B;
+  --sesc-light-green: #A3D233;
+  --sesc-medium-blue: #4A90CD;
+  --sesc-light-blue: #92D6F8;
+  --sesc-white: #FFFFFF;
+  --sesc-dark: #1B5E20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, var(--sesc-light-blue), var(--sesc-dark-green));
+  color: var(--sesc-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ----- HEADER ----- */
+header {
+  background-color: var(--sesc-white);
+  padding: 10px 20px;
+  border-bottom: 2px solid var(--sesc-light-green);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--sesc-dark);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--sesc-dark);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--sesc-light-green);
+}
+
+/* ----- HERO ----- */
+.hero {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
+
+.mission-statement {
+  color: #000;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/*ABOUT US */
+.text-align {
+  position: relative;
+  font-size: 24px;
+}
+
+.center-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* LEADERSHIP CARDS */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 #92D6F8;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #92D6F8;
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/* INITIATIVES / GROUP CARDS */
+.initiatives,
+.working-groups {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.initiatives h2,
+.working-groups h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.cards,
+.group-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card,
+.group-card {
+  background: white;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reuse hover effect */
+.group-card:hover {
+  transform: translateY(-5px);
+}
+
+/*CTA  */
+.cta {
+  padding: 60px 20px;
+  background-color: var(--sesc-dark-green);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta .btn {
+  background-color: var(--sesc-light-green);
+  color: var(--sesc-white);
+  border-radius: 5px;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* REGISTRATION BUTTON  */
+.registration-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.registration-container h2 {
+  margin-bottom: 15px;
+  color: var(--sesc-dark);
+}
+
+.registration-container .btn {
+  display: inline-block;
+  background-color: var(--sesc-light-green);
+  color: var(--sesc-white);
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.registration-container .btn:hover {
+  background-color: var(--sesc-dark-green);
+}
+
+/* WhatsApp icon */
+.whatsapp-logo {
+  width: 60px;
+  height: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-logo:hover {
+  transform: scale(1.1);
+}
+
+/SECTION DIVIDER/
+.section-divider {
+  border: none;
+  height: 4px;
+  background-color: var(--sesc-light-blue);
+  margin: 20px 0 40px 0;
+  width: 100%;
+}
+
+/* FOOTER*/
+footer {
+  background-color: var(--sesc-dark-green);
+  color: white;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-container h3 {
+  margin-bottom: 10px;
+}
+
+.footer-container p {
+  margin: 5px 0;
+}
+
+.socials a img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mission-statement {
+    font-size: 1rem;
+  }
+
+  .card,
+  .group-card {
+    width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+}
