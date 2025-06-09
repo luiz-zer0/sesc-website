@@ -415,7 +415,7 @@ footer {
     .project-icon {
       font-size: 3rem;
       color: var(--color-accent);
-      user-select: none;
+      
       display: inline-block;
     }
 
