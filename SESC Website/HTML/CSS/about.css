@@ -130,8 +130,10 @@ nav a:hover {
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+ width: 200px;           /* Fixed width */
+  height: 300px;          /* Fixed height */
+  object-fit: cover;      /* Crop to fill area without distortion */
+  display: block;
 }
 
 .container {
@@ -240,7 +242,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/SECTION DIVIDER/
+/*SECTION DIVIDER*/
 .section-divider {
   border: none;
   height: 4px;
